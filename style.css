@@ -1,0 +1,141 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #1e364b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+        }
+
+        .game-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+        h1{
+            color: white;
+            padding: 20px;
+        }
+
+        .player-option {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .choice-card {
+            background-color: #10cba0;
+            width: 90px;
+            height: 110px;
+            border-radius: 12px;
+            border: 3px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.15s ease, background-color 0.2s ease;
+            font-size: 45px;
+            user-select: none;
+        }
+
+        .choice-card:hover {
+            transform: translateY(-3px);
+            background-color: #0eb38d;
+        }
+
+        .choice-card:active {
+            transform: scale(0.95);
+        }
+
+        .choice-card img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .computer-card {
+            background-color: #10cba0;
+            width: 90px;
+            height: 110px;
+            border-radius: 12px;
+            border: 3px solid #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 45px;
+        }
+
+        .computer-card img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .reset-button {
+            background-color: #ffffff;
+            color: #c0392b;
+            border: none;
+            padding: 8px 24px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .reset-button:hover {
+            background-color: #f8f8f8;
+            transform: scale(1.03);
+        }
+
+        .reset-button:active {
+            transform: scale(0.97);
+        }
+
+        .reset-icon {
+            font-size: 18px;
+            display: inline-block;
+            transform: rotate(-45deg);
+        }
+
+        .score-board {
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 18px 10px;
+            font-weight: 800;
+            font-size: 16px;
+            color: #1a252f;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+            border-top: 3px solid #e74c3c;
+        }
+
+        .score-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
